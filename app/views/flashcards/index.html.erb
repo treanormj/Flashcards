@@ -1,0 +1,4 @@
+<h1>Welcome to Flashcards</h1>
+<% @flashcards.each do |card| %>
+  <%= link_to card.question, flashcard_path(card) %>
+<% end %>
