@@ -17,4 +17,11 @@
  body {
    background-color: blue;
    color: white;
+   font-family:'Sofia';
+   text-align: center;
+ }
+
+ h1 {
+   font-family:'IM Fell Great Primer';
+   color: white;
  }
