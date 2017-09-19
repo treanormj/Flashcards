@@ -1,0 +1,74 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/marctreanor/challenges/Flashcards/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/controllers/flashcards_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/models/flashcard.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/controllers/answers_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/marctreanor/challenges/Flashcards/app/models/answer.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1505841742
+  }
+}
