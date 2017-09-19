@@ -41,7 +41,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'coveralls', require: true
+  gem 'coveralls', require: false
 end
 
 group :development do
