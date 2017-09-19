@@ -5,7 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# used for uploading pictures
+# used for authentification
+gem 'devise'
+# used to load up pictures
 gem "carrierwave"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -42,6 +44,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'coveralls', require: false
+  gem 'valid_attribute'
+  gem 'factory_girl'
 end
 
 group :development do
