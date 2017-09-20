@@ -1,6 +1,11 @@
 <h1>Know English Flashcards</h1>
 <h2>The app for those who know no English</h2>
-<% @flashcards.each do |card| %>
+<br>
+<br>
 
-  <%= link_to "#{card.question}", flashcard_path(card) %>
-<% end %>
+  <% @flashcards.each do |card| %>
+    <li>
+      <%= link_to(image_tag(card.picture_url), flashcard_path(card))%>
+    </li>
+  <% end %>
+</ul>

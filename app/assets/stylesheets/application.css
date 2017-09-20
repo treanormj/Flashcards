@@ -18,10 +18,20 @@
    background-color: #798ce0;
    color: white;
    font-family:'Sofia';
-   text-align: center;
+
  }
 
  h1 {
    font-family:'IM Fell Great Primer';
    color: white;
+   text-align: center;
  }
+
+ img {
+   width: 200px;
+   border-radius: 20%;
+ }
+
+.show_page {
+  text-align: center;
+}
