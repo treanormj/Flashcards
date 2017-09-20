@@ -1,3 +1,16 @@
-<%= @flashcard.question %>
+<% my_class_name = "show_page" %>
+<div class="<%= my_class_name %>">
 
-<%= link_to "Answer", flashcard_answer_path(@flashcard) %>
+
+
+
+  <img src="<%=@flashcard.picture_url%>", >
+</div>
+
+<a href="<%=@audio%>"><%= image_tag("hearing symbol.png", :alt => "hearing symbol") %></a>
+
+
+<h1><%= @flashcard.word %></h1>
+<br/>
+
+<%= link_to "Home", flashcards_path%>
