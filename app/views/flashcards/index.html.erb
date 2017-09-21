@@ -4,8 +4,8 @@
 <br>
 
   <% @flashcards.each do |card| %>
-    <li>
+    <ul>
       <%= link_to(image_tag(card.picture_url), flashcard_path(card))%>
-    </li>
+    </ul>
   <% end %>
 </ul>
