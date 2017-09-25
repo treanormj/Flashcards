@@ -1,4 +1,9 @@
 class TopicsController < ApplicationController
+
+  def new
+    @topics = Topic.all
+  end
+
   def index
     @topics = Topic.all
   end

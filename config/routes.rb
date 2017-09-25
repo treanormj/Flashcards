@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :topics, only: [:index, :show, :new, :destroy] do
     resource :flashcards, only: [:index, :show, :new, :destroy]
   end
+
+  get "/:page" => "static#show"
 end

@@ -13,6 +13,7 @@ Topic.destroy_all
 t1= Topic.create(topic: "kitchen")
 t2= Topic.create(topic: "color")
 t3= Topic.create(topic: "direction")
+t4= Topic.create(topic: "random")
 
 Flashcard.create(picture_url: "http://www.rhythmicgymnastics.com/1553-1526-large/chacott-child-competition-ball-red.jpg", word: "ball")
 Flashcard.create(picture_url: "https://i.pinimg.com/736x/07/a4/06/07a4067a983dbfb339b5b2d8a2c82ba6--cats-humor-cat-memes.jpg", word: "cat")

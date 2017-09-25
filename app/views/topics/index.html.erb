@@ -1,10 +1,18 @@
-<h1>Know (no) English Flashcards</h1>
+<br>
+<h1>WELCOME</h1>
+<h1>Know (no) English 101</h1>
 <h2>The app for those who know no English</h2>
+<h2 id="homework">Tonight's Homework</h2>
 <br>
+<img id="statue" src="Statue_of_Liberty.jpg">
 <br>
+<div class="index">
   <% @topics.each do |topic| %>
-    <ul>
+    <ul id='indexB'>
       <%= link_to topic.topic, topic_path(topic)%>
     </ul>
   <% end %>
-</ul>
+</div>
+<!-- <%= link_to "Find a word", root_path, class:"home-link"%> -->
+ <%= link_to "Find a Word", "/finding_word" %>
+ <%= link_to "Add a Word", "/new_topic_flashcards_path" %>
