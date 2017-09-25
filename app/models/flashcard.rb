@@ -1,6 +1,5 @@
 class Flashcard < ApplicationRecord
-  has_one :answer
+  belongs_to :topic
 
   validates_presence_of :word, :picture_url
-
 end

@@ -1,13 +1,15 @@
-require "rails_helper"
-
-feature "user index" do
-  scenario "user sees a list of pictures" do
-    visit root_path
-    @picture = Flashcard.create(picture_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ReZiSDya8OC7LXmUBjeGKw92t9AwpUSUn2DEZ2ebQGLjIcIS")
-
-    expect(page).to have_content("Know English Flashcards")
-    # expect(page).to have_image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ReZiSDya8OC7LXmUBjeGKw92t9AwpUSUn2DEZ2ebQGLjIcIS")
-    expect(page).to have_link(@picture)
-  #   expect(page).to_not have_content ""
-  end
-end
+# require "rails_helper"
+#
+# feature "flashcard show page" do
+#   scenario "user sees a picture, the English word that correlates to that picture, the associated topic, and a link that pronounces the English word" do
+#     visit topic_flashcards_path
+#     card = Flashcard.create(picture_url: "https://o.quizlet.com/i/5Vmoe8u9CaLfYye2ErPD3Q_m.jpg", word: "fork", topic_id: 1)
+#
+#     expect(page).to have_content "google_translate_element"
+#     expect(page).to have_content topic.topic
+#     expect(page).to have_content card.word
+#     expect(page).to have_image("https://o.quizlet.com/i/5Vmoe8u9CaLfYye2ErPD3Q_m.jpg")
+#     expect(page).to have_link(@audio)
+#     expect(page).to have_link(route_path)
+#   end
+# end

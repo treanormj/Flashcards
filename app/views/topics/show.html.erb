@@ -1,0 +1,14 @@
+<h1><%= @topic.topic %></h1>
+<br>
+<br>
+
+  <% @flashcards.each do |card| %>
+    <ul>
+      <%= link_to(image_tag(card.picture_url), topic_flashcards_path(card))%>
+    </ul>
+  <% end %>
+</ul>
+
+<h1>bla bla bla</h1>
+
+<%= link_to "Home", root_path, class:"home-link"%>
