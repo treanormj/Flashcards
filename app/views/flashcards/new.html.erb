@@ -1,1 +1,16 @@
 <h1>Add a new flashcard!</h1>
+
+<%= form_for @flashcard do |f| %>
+
+  <%= f.label :word %>
+  <%= f.text_field :word %>
+</br>
+</br>
+  <%= f.label :picture_url %>
+  <%= f.text_field :picture_url %>
+</br>
+</br>
+<%= f.collection_select( :flashcard_id, Topic.all, :id, :topic ) %>
+  <%= f.submit "Add Flashcard" %>
+<% end %>
+<%= link_to "Home", root_path, class:"home-link"%>

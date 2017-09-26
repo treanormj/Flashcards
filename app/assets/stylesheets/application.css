@@ -28,10 +28,18 @@
    background-color: tan;
    color: white;
    font-family: 'Indie Flower', cursive;
-   background-image: url("blackboard.jpg");
-   background-size: 100%;
-   background-repeat: no-repeat;
  }
+
+.blackboard {
+  background-image: url("blackboard.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+.constitution {
+  text-align: center;
+  text-decoration: underline;
+}
 
  h1 {
    font-family:'IM Fell Great Primer';
@@ -56,6 +64,12 @@
    }*/
  }
 
+.topic_image {
+  width: 50px;
+  border: 0px;
+  border-style: hidden;
+  text-align: right;
+}
 .show-page {
   font-size: xx-large;
   text-align: center;
@@ -78,4 +92,10 @@
 .google_translate_element {
   width: 100px;
   margin-left: 20px;
+}
+
+.constitution_image {
+  text-align: right;
+  margin: 10px;
+
 }

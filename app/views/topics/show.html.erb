@@ -4,7 +4,7 @@
 
   <% @flashcards.each do |card| %>
     <ul>
-      <%= link_to(image_tag(card.picture_url), topic_flashcards_path(card))%>
+      <%= link_to(image_tag(card.picture_url), topic_flashcard_path(card))%>
     </ul>
   <% end %>
 </ul>
