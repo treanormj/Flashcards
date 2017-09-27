@@ -1,17 +1,13 @@
 <h1><%= @topic.topic %></h1>
 <br>
 <br>
-
-<section id="topic_list" class="hero u-full-width">
-  <div class="container centered">
-    <div class="three columns">
-      <% @flashcards.each do |card| %>
-        <ul>
-          <%= link_to(image_tag(card.picture_url), topic_flashcard_path(card))%>
-        </ul>
-      <% end %>
-    </div>
+<div class="container">
+  <div class="row">
+    <% @flashcards.each do |card| %>
+      <div class="one-third column">
+        <%= link_to(image_tag(card.picture_url), topic_flashcard_path(card))%>
+      </div>
+    <% end %>
   </div>
-</section>
-
+</div>
 <%= link_to "Home", root_path, class:"home-link"%>
