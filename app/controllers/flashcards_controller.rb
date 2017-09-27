@@ -2,6 +2,7 @@ class FlashcardsController < ApplicationController
 
   def new
     @flashcard = Flashcard.new
+    @topics = Topic.all
   end
 
   def index
@@ -9,10 +10,11 @@ class FlashcardsController < ApplicationController
   end
 
   def create
+    binding.pry
     # params= {word:fork, picture_url: kitten.com, topic: kitchen}
     #
     @flashcard = Flashcard.create(flashcard_params)
-    @topic = Topic.find(params['topic'])
+    @topic = Topic.find(params['topic_id'])
     @flashcard.topic = @topic
     @flashcard = Flashcard.new(flashcard_params)
     # current_user would be once I use devise

@@ -12,9 +12,7 @@ function googleTranslateElementInit() {
   <img src="<%=@flashcard.picture_url%>", class:"show-page-image" >
   <h1><%= @flashcard.word %></h1>
   <h3><%= @flashcard.topic.topic %></h3>
-  <div class="sounds-like">
-    <a href="<%=@audio%>" rel="nofollow"><%= image_tag("hearing symbol.png", :alt => "hearing symbol", class:"sounds-like-image") %></a>
-  </div>
+
 
   <audio controls="controls">
   <source src="<%=@audio%>" type="audio/wav">

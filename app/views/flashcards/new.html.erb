@@ -10,7 +10,9 @@
   <%= f.text_field :picture_url %>
 </br>
 </br>
-<%= f.collection_select( :flashcard_id, Topic.all, :id, :topic ) %>
-  <%= f.submit "Add Flashcard" %>
+
+<%= f.select :topic_id, Topic.all.collect {|topic| [ topic.topic, topic.id ] } %>
+
+<%= f.submit "Add Flashcard" %>
 <% end %>
 <%= link_to "Home", root_path, class:"home-link"%>

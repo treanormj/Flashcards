@@ -2,12 +2,16 @@
 <br>
 <br>
 
-  <% @flashcards.each do |card| %>
-    <ul>
-      <%= link_to(image_tag(card.picture_url), topic_flashcard_path(card))%>
-    </ul>
-  <% end %>
-</ul>
-
+<section id="topic_list" class="hero u-full-width">
+  <div class="container centered">
+    <div class="three columns">
+      <% @flashcards.each do |card| %>
+        <ul>
+          <%= link_to(image_tag(card.picture_url), topic_flashcard_path(card))%>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+</section>
 
 <%= link_to "Home", root_path, class:"home-link"%>
