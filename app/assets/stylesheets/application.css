@@ -1,4 +1,5 @@
- /** This is a manifest file that'll be compiled into application.css, which will include all the files
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
@@ -11,11 +12,15 @@
  *
  *= require_tree .
  *= require_self
- **/
+ */
+
  html {
-   font-family: sans-serif; /* 1 */
+   font-family: 'Walter Turncoat';
+   font-family: 'Architects Daughter';
+   font-family: 'Gloria Hallelujah';
    -ms-text-size-adjust: 100%; /* 2 */
    -webkit-text-size-adjust: 100%; /* 2 */
+   height: 100%;
  }
 
 #indexB a{
@@ -29,24 +34,54 @@
   display: inline;
 }
  body {
-   background-color: tan;
+   background-color: #1D2134;
    color: white;
-   font-family: 'Indie Flower', cursive;
+   height: 100%;
+   background-color: #FAA916;
  }
 
 .blackboard {
   background-image: url("blackboard.jpg");
-  background-size: 100%;
   background-repeat: no-repeat;
-
+  width: 100%;
+  background-position: center;
+  background-color: #1D2134;
 }
+
+.blackboard h4 {
+  width: 100%;
+  text-align: center;
+}
+.add_a_word {
+  font-size: xx-large;
+  color: black;
+  /*padding: 16px;*/
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.add_a_word:hover {
+    background-color: black; /* Green */
+    color: white;
+}
+.index_poster img{
+  width: 20%;
+  height: 20%;
+  float: right;
+  margin: 10px;
+  vertical-align: middle;
+  border: thick solid black;
+}
+/*.index_poster {
+  width: 20px;
+  margin-right: 100px;
+}*/
 .constitution {
   text-align: center;
   text-decoration: underline;
 }
 
  h1 {
-   font-family:'IM Fell Great Primer';
    color: white;
    text-align: center;
  }
@@ -54,26 +89,12 @@
  h2 {
    margin-left: 20px;
  }
- img {
-   width: 200px;
-   height: 200px;
-   border-radius: 20%;
-   border: 2px;
-   border-style: solid;
-   border-width: thin;
-   /*transition: all 0.2s ease 0s;
-
-   &:hover {
-     border-style: solid;
-     border-width: thin;
-   }*/
- }
 
 .topic_image {
   width: 50px;
   border: 0px;
   border-style: hidden;
-  text-align: right;
+float: right;
 }
 .show-page {
   font-size: xx-large;
@@ -102,5 +123,4 @@
 .constitution_image {
   text-align: right;
   margin: 10px;
-
 }
