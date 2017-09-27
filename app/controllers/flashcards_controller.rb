@@ -10,18 +10,14 @@ class FlashcardsController < ApplicationController
   end
 
   def create
-    binding.pry
     # params= {word:fork, picture_url: kitten.com, topic: kitchen}
     #
-    @flashcard = Flashcard.create(flashcard_params)
-    @topic = Topic.find(params['topic_id'])
-    @flashcard.topic = @topic
     @flashcard = Flashcard.new(flashcard_params)
     # current_user would be once I use devise
     # @flashcard.user = current_user
     if @flashcard.save
       flash[:notice] = 'Mural added successfully'
-      redirect_to flashcard_params(@flashcard)
+      redirect_to topic_path(@flashcard.topic)
     else
       flash[:notice] = @flashcard.errors.full_messages.join(', ')
       render :new
