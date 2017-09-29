@@ -53,7 +53,6 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'valid_attribute'
   gem 'factory_girl'
-  gem 'yarn'
 end
 
 group :development do
