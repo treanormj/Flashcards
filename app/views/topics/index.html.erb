@@ -1,12 +1,15 @@
 <div class="blackboard">
-  <h4>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h4>
-  <h1>Know (no) English 101</h1>
+<div class="alphabet">
+  <h3>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
+</div>
+<div class="title">
+  <h1>Know <span class="bold red">(no)</span> English 101</h1>
   <h2>The app for those who know no English</h2>
+</div>
 <div class="container">
   <div class="index_poster">
     <%=link_to image_tag("Statue_of_LibertyB.jpg"), "https://en.wikipedia.org/wiki/Statue_of_Libert"%>
   </div>
-</br>
   <div class="index_poster">
       <%=link_to image_tag("constitution.jpg"), "/constitution"%>
   </div>
@@ -14,19 +17,16 @@
 
     <div class="homework">
       <h2>Tonight's Homework</h2>
-      <br>
-      <div class="index">
         <% @topics.each do |topic| %>
           <ul id='indexB'>
             <%= link_to topic.topic, topic_path(topic)%>
           </ul>
         <% end %>
-      </div>
     </div>
 </br>
 </br>
   <%= button_to "Add a Word", new_flashcard_path, class:"add_a_word", method: :get %>
 </div>
+</br>
+</br>
 <h1><%= %></h1>
-</br>
-</br>

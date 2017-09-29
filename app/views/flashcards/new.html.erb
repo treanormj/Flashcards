@@ -1,7 +1,7 @@
 <h1>Add a new flashcard!</h1>
 
 <%= form_for @flashcard do |f| %>
-
+<div class="add_a_word_form"
   <%= f.label :word %>
   <%= f.text_field :word %>
 </br>
@@ -11,8 +11,11 @@
 </br>
 </br>
 
-<%= f.select :topic_id, Topic.all.collect {|topic| [ topic.topic, topic.id ] } %>
+<%= f.select :topic_id, Topic.all.collect {|topic| [ topic.topic, topic.id ] }, { class:'dropbtn'} %>
 
 <%= f.submit "Add Flashcard" %>
 <% end %>
-<%= link_to "Home", root_path, class:"home-link"%>
+</div>
+</br>
+
+<%= button_to "Home", root_path, class:"home-link", method: :get %>
