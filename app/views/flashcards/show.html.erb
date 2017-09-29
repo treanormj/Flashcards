@@ -1,12 +1,4 @@
-<% my_class_name = "show_page" %>
-<br/>
-<br/>
-<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<br/>
+
 <% my_class_name = "show-page" %>
 <div class="<%= my_class_name %>">
   <img src="<%=@flashcard.picture_url%>", class:"show-page-image" >
@@ -20,4 +12,4 @@ function googleTranslateElementInit() {
 </div>
 <br/>
 
-<%= link_to "Home", root_path, class:"home-link"%>
+<%= button_to "Home", root_path, class:"home-link", method: :get %>

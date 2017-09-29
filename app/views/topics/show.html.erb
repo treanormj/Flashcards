@@ -1,13 +1,14 @@
 <h1><%= @topic.topic %></h1>
 <br>
 <br>
-<div class="container">
-  <div class="row">
-    <% @flashcards.each do |card| %>
-      <div class="one-third column">
-        <%= link_to(image_tag(card.picture_url), topic_flashcard_path(card))%>
-      </div>
-    <% end %>
+<div class=”masonry-layout”
+  <div class=”masonry-layout-panel”>
+    <div class=”masonry-layout-panel-content”>
+      <% @flashcards.each do |card| %>
+      <%= link_to(image_tag(card.picture_url), topic_flashcard_path(card))%>
+      <% end %>
+    </div>
   </div>
 </div>
-<%= link_to "Home", root_path, class:"home-link"%>
+
+<%= button_to "Home", root_path, class:"home-link", method: :get %>
