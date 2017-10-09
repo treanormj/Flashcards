@@ -26,6 +26,7 @@ class FlashcardsController < ApplicationController
 
   def show
     # use find when using an id. Use find_by when searching by any other way.
+    @flashcards = Flashcard.all
     @flashcard = Flashcard.find(params[:topic_id])
     # This is re: HTTParty
     key = ENV["WORDNIK_API_KEY"]

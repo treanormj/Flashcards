@@ -1,15 +1,31 @@
+<div class="wrapper">
+  <div class="cols">
+    <div class="col" ontouchstart="this.classList.toggle('hover');">
+      <div class="container">
+        <div class="front" style="background:black">
 
-<% my_class_name = "show-page" %>
-<div class="<%= my_class_name %>">
-  <img src="<%=@flashcard.picture_url%>", class:"show-page-image" >
-  <h1><%= @flashcard.word %></h1>
-  <h3><%= @flashcard.topic.topic %></h3>
+          <img src="<%=@flashcard.picture_url%>">
+        </div>
+        <div class="back">
+          <div class="inner">
+            <h1><%= @flashcard.word %></h1>
 
-
-  <audio controls="controls">
-  <source src="<%=@audio%>" type="audio/wav">
-</audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<br/>
 
-<%= button_to "Home", root_path, class:"home-link", method: :get %>
+
+    <% my_class_name = "show-page" %>
+    <div class="<%= my_class_name %>">
+      <h3><%= @flashcard.topic.topic %></h3>
+      <audio controls="controls">
+        <source src="<%=@audio%>" type="audio/wav">
+      </audio>
+    </div>
+
+    <br/>
+  <%= button_to 'Back', topic_path, class:"home-link", method: :get %>
+    <!-- <%= button_to "Home", root_path, class:"home-link", method: :get %> -->
