@@ -1,11 +1,22 @@
+
 <%= button_to "Home", root_path, class:"home-link", method: :get %>
+<%= button_to "Link to Google Translate", "https://translate.google.com/", class: "translate", method: :get %>
 </br>
+
+<div class=”masonry-layout”
+<div class=”masonry-layout-panel”>
+  <div class=”masonry-layout-panel-content”>
+
+
+    <%=link_to image_tag("Washington.jpg"), "http://www.history.com/topics/us-presidents/george-washington" %>
+    <%=link_to image_tag("Khan.jpeg"), "https://www.youtube.com/watch?v=hOKMVvp9XGk" %>
+    <%=link_to image_tag("madison2.jpeg"), "http://www.history.com/topics/us-presidents/james-madison" %>
+  </div>
+</div>
+</div>
+
 <h1>The Constitution of the United States</h1>
-
-
-<%=link_to image_tag("Washington.jpg"), "http://www.history.com/topics/us-presidents/george-washington", :class => "constitution_image"%>
-<%=link_to image_tag("Khan.jpeg"), "https://www.youtube.com/watch?v=hOKMVvp9XGk", :class => "constitution_image"%>
-<%=link_to image_tag("madison2.jpeg"), "http://www.history.com/topics/us-presidents/james-madison", :class => "constitution_image"%>
+</br>
 <h2>
 <div class="constitution">PREAMBLE</br></div>
 We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</br>

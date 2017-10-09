@@ -1,32 +1,32 @@
 <div class="blackboard">
-<div class="alphabet">
-  <h3>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
-</div>
-<div class="title">
-  <h1>Know <span class="bold red">(no)</span> English 101</h1>
-  <h2>The app for those who know no English</h2>
-</div>
-<div class="container">
-  <div class="index_poster">
-    <%=link_to image_tag("Statue_of_LibertyB.jpg"), "https://en.wikipedia.org/wiki/Statue_of_Libert"%>
+  <div class="alphabet">
+    <h3>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
   </div>
-  <div class="index_poster">
-      <%=link_to image_tag("constitution.jpg"), "/constitution"%>
+  <div class="title">
+    <h1>Know <span class="bold red">(no)</span> English 101</h1>
+    <h2>The app for those who know no English!</h2>
   </div>
-</div>
-
-    <div class="homework">
-      <h2>Tonight's Homework</h2>
-        <% @topics.each do |topic| %>
-          <ul id='indexB'>
-            <%= link_to topic.topic, topic_path(topic)%>
-          </ul>
-        <% end %>
+  <div class="container">
+    <div class="index_poster">
+      <%=link_to image_tag("Statue_of_LibertyC.jpg", alt: "Statue of Liberty"), "https://www.libertyellisfoundation.org/about-the-statue-of-liberty", target: :blank %>
     </div>
+    <div class="index_poster">
+      <%=link_to image_tag("constitution.jpg"), "/constitution", target: :blank %>
+    </div>
+  </div>
+
+  <div class="homework">
+    <h2>Tonight's Homework</h2>
+    <% @topics.each do |topic| %>
+    <ul id='indexB'>
+      <%= link_to topic.topic, topic_path(topic)%>
+    </ul>
+    <% end %>
+  </div>
 </br>
 </br>
-  <%= button_to "Add a Word", new_flashcard_path, class:"add_a_word", method: :get %>
+<%= button_to "Add a Word", new_flashcard_path, class:"add_a_word", method: :get %>
+</br>
+<%= button_to "Link to Google Translate", "https://translate.google.com/", class: "translate", target: :blank, method: :get %>
 </div>
 </br>
-</br>
-<h1><%= %></h1>

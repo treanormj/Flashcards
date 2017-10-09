@@ -1,6 +1,4 @@
 <h1><%= @topic.topic %></h1>
-<br>
-<br>
 <div class=”masonry-layout”
   <div class=”masonry-layout-panel”>
     <div class=”masonry-layout-panel-content”>
@@ -10,5 +8,12 @@
     </div>
   </div>
 </div>
-
-<%= button_to "Home", root_path, class:"home-link", method: :get %>
+</br>
+<div class=”masonry-layout”
+  <div class=”masonry-layout-panel”>
+    <div class=”masonry-layout-panel-content”>
+      <%= button_to "Home", root_path, class:"home-link", method: :get %>
+      <%= button_to "Link to Google Translate", "https://translate.google.com/", class: "translate", method: :get %>
+</div>
+</div>
+</div>
