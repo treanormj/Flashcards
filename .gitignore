@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore environment variables
+/.env
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -17,6 +20,3 @@
 /yarn-error.log
 
 .byebug_history
-
-# Ignore environment variables
-/.env
