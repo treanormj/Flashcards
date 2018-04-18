@@ -9,12 +9,15 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+# binding.pry
   # Show full error reports.
-  config.consider_all_requests_local = true
+  # I set this to false because I couldn't seed
+  config.consider_all_requests_local = false
 
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
-    config.action_controller.perform_caching = true
+    # I set this to false because I couldn't seed
+    config.action_controller.perform_caching = false
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
@@ -40,10 +43,12 @@ Rails.application.configure do
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
-  config.assets.debug = true
+  # having problems seeding, so I turned this to false
+  config.assets.debug = false
 
   # Suppress logger output for asset requests.
-  config.assets.quiet = true
+  # I set this to false because I couldn't seed or run the server
+  config.assets.quiet = false
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

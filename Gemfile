@@ -6,8 +6,8 @@ git_source(:github) do |repo_name|
 end
 ruby '2.3.3'
 
-# hides api keys. 'dotenv-rails' is listed below and enabling this will be redundant 
-# gem 'dotenv-rails'
+# hides api keys. 'dotenv-rails' is listed below and enabling this will be redundant
+gem 'dotenv-rails'
 # pulls down APIs
 gem 'httparty'
 #used for pronounciation
@@ -16,12 +16,14 @@ gem 'wordnik'
 gem 'devise'
 # used to load up pictures
 gem "carrierwave"
-# used to connect to Amazon S3
-gem "fog-aws"
 
-group :development, :test do
-  gem "dotenv-rails"
-end
+# ******used to connect to Amazon S3******
+
+# gem "fog-aws"
+
+# group :development, :test do
+#   gem "dotenv-rails"
+# end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
@@ -58,7 +60,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'coveralls', require: false
   gem 'valid_attribute'
-  gem 'factory_girl'
+  gem 'factory_bot'
 end
 
 group :development do
