@@ -19,4 +19,4 @@
 .byebug_history
 
 # Ignore environment variables
-.env
+/.env
