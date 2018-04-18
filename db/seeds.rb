@@ -37,7 +37,7 @@ Flashcard.create(word: "plate", picture_url: "https://farm4.staticflickr.com/318
 Flashcard.create(word: "milk", picture_url: "https://o.quizlet.com/i/KISrpJKYuBIRPFPGZb1FTA_m.jpg", topic_id: t5.id)
 Flashcard.create(word: "coffee", picture_url: "https://o.quizlet.com/tTsiOQZoOp3bF9LPaEv4fQ_m.jpg", topic_id: t5.id)
 
-Flashcard.create(word: "black", picture_url: "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/22046109_10213327470757889_7269320997768382643_n.jpg?oh=7c8f7bb3c14dd7ef87dd75498b9386e5&oe=5A461C00", topic_id: t4.id)
+Flashcard.create(word: "black", picture_url: "https://s3.amazonaws.com/flashcards-production/black.gif", topic_id: t4.id)
 Flashcard.create(word: "blue", picture_url: "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/22049849_10213327469517858_7139705399740424163_n.jpg?oh=bfa11de2e4b746209d3dd604d195f213&oe=5A853004", topic_id: t4.id)
 Flashcard.create(word: "green", picture_url: "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/22089623_10213327469357854_7557299805231849653_n.jpg?oh=8ec6257c3b648005a7dfca794ac598b7&oe=5A87703F", topic_id: t4.id)
 Flashcard.create(word: "purple", picture_url: "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/22007908_10213327468677837_6847421982074540539_n.jpg?oh=825257e4055f5c3d2674bd63563939d5&oe=5A852E4C", topic_id: t4.id)
